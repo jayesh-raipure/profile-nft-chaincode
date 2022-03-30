@@ -6,7 +6,7 @@
 ```sh
 curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.4.1 1.5.2
 ```
-Move chaincode-poc code under fabric-samples/asset-transfer-basic folder and install node packages
+Move profile-nft-chaincode code under fabric-samples/asset-transfer-basic folder and install node packages
 ---
 ```sh
 npm install
@@ -33,12 +33,12 @@ Make sure network is down
 ---
 Run the below command to install chaincode
 ```sh
-./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/chaincode-poc/ -ccl javascript
+./network.sh deployCC -ccn basic -ccp ../asset-transfer-basic/profile-nft-chaincode/ -ccl javascript
 ```
 
 ## Setup Nodejs application to communicate with hyperledger fabric
 ---
-Copy the nft-poc-nodejs code to fabric-samples/asset-transfer-basic folder and install node packages
+Copy the profile-nft-backend code to fabric-samples/asset-transfer-basic folder and install node packages
 ```sh
 nmp install
 ```
@@ -52,7 +52,7 @@ node index.js
 ```
 ## Start Client application
 ---
-Start the client app to communitate with backend using front-end app. Navigate to react-app-main
+Start the client app to communitate with backend using front-end app. Navigate to profile-nft-client
 ```sh
 cd react-app-main
 npm install
